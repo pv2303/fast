@@ -329,9 +329,9 @@ data <- tibble(
   as_tsibble(index = time)
 
 autoplot(data, color = 'steelblue') +
-  autolayer(data, covariada_1, color = 'blue', alpha = 0.5) +
-  autolayer(data, covariada_2, color = 'blue', alpha = 0.5) +
-  autolayer(data, quebra, color = 'blue', alpha = 0.5)
+  autolayer(data, covariada_1, color = 'blue', linetype = 'longdash', alpha = 0.5) +
+  autolayer(data, covariada_2, color = 'blue', linetype = 'longdash', alpha = 0.5) +
+  autolayer(data, quebra, color = 'blue', linetype = 'longdash', alpha = 0.5) +
 
 modelling_complete(df = data,
                    var_y = 'y',
